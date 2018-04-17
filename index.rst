@@ -8,7 +8,7 @@ Attraverso il Dataportal è possibile consultare il catalogo degli open data, le
 
 Il Dataportal è costituito da un'`area pubblica <dataportal-pubblico/index.html>`__, accessibile a tutti gli utenti del Web, e un'`area privata <dataportal-privato/index.html>`__, a uso esclusivo degli utenti registrati.
 
-Questo manuale per l'utente illustra le principali operazioni che è possibile svolgere all'interno delle due piattaforme. La `guida per gli sviluppatori <daf-docs.readthedocs.io>`__, che descrive nel dettaglio le operazioni per l'installazione locale del DAF, è invece contenuta in un documento separato.
+Questo manuale per l'utente illustra le principali operazioni che è possibile svolgere all'interno delle due piattaforme. La `guida per gli sviluppatori <https://daf-docs.readthedocs.io/>`__, che descrive nel dettaglio le operazioni per l'installazione locale del DAF, è invece contenuta in un documento separato.
 
 
 
