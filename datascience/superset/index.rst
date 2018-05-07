@@ -17,7 +17,7 @@ Per accedere a Superset direttamente da dataset presente all'interno del datapor
 - cliccare sul link della sezione “Superset” dal tab “Strumenti”
 Verrai automaticamente indirizzato su SUPERSET nella modalità di creazione di un widget
 
-.. image:: img_superset/schedaDataset.png
+.. image:: img_superset/SchedaDataset.png
 
 ========================================
 Controllo del dataset
@@ -33,8 +33,9 @@ Proprietà del dataset
 Prima di iniziare a costruire degi slicer è buona regola controllare che i campi del dataset e le metriche proposte siano conformi al tipo di informazione che il dataset vuole comunicare.
 
 Ogni dataset è definito da un elenco di:
- ** campi: dati dalle misure quantitative (es: numero di abitanti, reddito, percentuale di disoccupazione) e dalle dimensioni di analisi (es.nome comune, fascia di reddito, tipologia di azienda). Le dimensioni consentono di determinare il metodo di raggruppamento dei dati provenienti dalla misura (es. mostrami la media della misura "reddito" per fascia di reddito e per comune) 
- ** metriche: Superset mette a disposizione per ogni campo diverse metriche che è possibile avere a disposizione inserendo la spunta sulla metrica di interesse. Stà all'utente valutare quali inserire e su quali campi abilitarle.
+
+* 'campi': dati dalle misure quantitative (es: numero di abitanti, reddito, percentuale di disoccupazione) e dalle dimensioni di analisi (es.nome comune, fascia di reddito, tipologia di azienda). Le dimensioni consentono di determinare il metodo di raggruppamento dei dati provenienti dalla misura (es. mostrami la media della misura "reddito" per fascia di reddito e per comune) 
+* 'metriche': Superset mette a disposizione per ogni campo diverse metriche che è possibile avere a disposizione inserendo la spunta sulla metrica di interesse. Stà all'utente valutare quali inserire e su quali campi abilitarle.
 es: count, sum, avg
 
 
