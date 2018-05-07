@@ -8,6 +8,39 @@ Superset è stato integrato con il DAF per offrire agli utenti la possibilità d
 Questa sezione è pensata per fornire indicazioni utili alla creazione di tabelle e grafici.
 Per approfondimenti sulle funzionalità e sulle modalità d'uso di Superset, si rimanda alle documentazione suggerita nella sezione 'Risorse Utili' di questa guida.
 
+
+========================================
+Utilizzare Superset su un dataset di interesse
+========================================
+Per accedere a Superset direttamente da dataset presente all'interno del dataportal è necessario:
+- accedere alla scheda del dataset
+- cliccare sul link della sezione “Superset” dal tab “Strumenti”
+Verrai automaticamente indirizzato su SUPERSET nella modalità di creazione di un widget
+
+.. image:: img_superset/schedaDataset.png
+
+========================================
+Controllo del dataset
+========================================
+Se si è in possesso di un'utenza editor e si è appena caricato il dataset sul dataporta, può essere utile controllare rapidamente se il numero di record caricati corrisponde a quelli attesi. 
+E' possibile effettuare questo primo test selezionando nel campo Metrics “COUNTS (*)” e cliccando su “Run query”.
+
+.. image:: img_superset/checkDatasetRecords.png
+
+========================================
+Proprietà del dataset
+========================================
+Prima di iniziare a costruire degi slicer è buona regola controllare che i campi del dataset e le metriche proposte siano conformi al tipo di informazione che il dataset vuole comunicare.
+
+Ogni dataset è definito da un elenco di:
+ ** campi: dati dalle misure quantitative (es: numero di abitanti, reddito, percentuale di disoccupazione) e dalle dimensioni di analisi (es.nome comune, fascia di reddito, tipologia di azienda). Le dimensioni consentono di determinare il metodo di raggruppamento dei dati provenienti dalla misura (es. mostrami la media della misura "reddito" per fascia di reddito e per comune) 
+ ** metriche: Superset mette a disposizione per ogni campo diverse metriche che è possibile avere a disposizione inserendo la spunta sulla metrica di interesse. Stà all'utente valutare quali inserire e su quali campi abilitarle.
+es: count, sum, avg
+
+
+.. image:: img_superset/checkMetriche.png
+
+
 ========================================
 Configurazione e aggiunta  di un dataset
 ========================================
