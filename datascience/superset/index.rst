@@ -13,16 +13,16 @@ Per approfondimenti sulle funzionalità e sulle modalità d'uso di Superset, si 
 Utilizzare Superset su un dataset di interesse
 ========================================
 Per accedere a Superset direttamente da dataset presente all'interno del dataportal è necessario:
-- accedere alla scheda del dataset
-- cliccare sul link della sezione “Superset” dal tab “Strumenti”
-Verrai automaticamente indirizzato su SUPERSET nella modalità di creazione di un widget
+* accedere alla scheda del dataset
+* cliccare sul link della sezione “Superset” dal tab “Strumenti”
+Verrai automaticamente indirizzato su Superset nella modalità di creazione di un widget
 
 .. image:: img_superset/SchedaDataset.png
 
 ========================================
 Controllo del dataset
 ========================================
-Se si è in possesso di un'utenza editor e si è appena caricato il dataset sul dataporta, può essere utile controllare rapidamente se il numero di record caricati corrisponde a quelli attesi. 
+Se si è in possesso di un'utenza editor e si è appena caricato il dataset sul dataportal, può essere utile controllare rapidamente se il numero di record caricati corrisponde a quelli attesi. 
 E' possibile effettuare questo primo test selezionando nel campo Metrics “COUNTS (*)” e cliccando su “Run query”.
 
 .. image:: img_superset/checkDatasetRecords.png
@@ -30,7 +30,7 @@ E' possibile effettuare questo primo test selezionando nel campo Metrics “COUN
 ========================================
 Proprietà del dataset
 ========================================
-Prima di iniziare a costruire degi slicer è buona regola controllare che i campi del dataset e le metriche proposte siano conformi al tipo di informazione che il dataset vuole comunicare.
+Prima di iniziare a costruire degi slicer è buona regola controllare che i campi del dataset e le metriche proposte siano conformi al tipo di informazione che si intende comunicare.
 
 Ogni dataset è definito da un elenco di:
 
@@ -43,11 +43,12 @@ es: count, sum, avg
 
 
 ========================================
-Configurazione e aggiunta  di un dataset
+Configurazione di un dataset
 ========================================
-Un utente può accedere alla homepage di Superset direttamente dal Dataportal e utilizzarlo per creare datastories e dashboard che integrano le analisi realizzate.
-Nel menù laterale sinistro della sezione privata del Dataportal è infatti presente un pulsante `Business Intelligence <https://bi.daf.teamdigitale.it/>`_ che abilita l'accesso a Superset.
-Una volta entrati in Superset, si accede alla lista delle dashboard create nell'ambito dell'organizzazione a cui afferisce l'utente che ha effettuato l'accesso.
+Un utente può accedere alla homepage di Superset direttamente dal Dataportal grazie al menù laterale sinistro della sezione privata del Dataportal (sezione: Toolkit - Strumenti - Superset) oppure atterrare comodamente alla schermata di crezione di uno slicer attraverso la scheda del dataset mostrata in precedenza.
+
+
+Una volta entrati in Superset dal menù Strumenti, si accede alla lista delle dashboard create nell'ambito dell'organizzazione a cui afferisce l'utente che ha effettuato l'accesso.
 Superset adotta infatti un approccio self-service: questo significa che ciascun utente, da un lato, potrà provvedere alla creazione delle nuove tabelle utili alle analisi, dei grafici e delle dashboard; dall'altro potrà riutilizzare le tabelle, i grafici e le dashboard creati dalla community.
 Chiaramente quest'ultima possibilità impone anche una certa disciplina nell'uso dello strumento, per evitare di interferire con le analisi fatte dagli altri utenti dell'organizzazione.
 
@@ -71,16 +72,6 @@ Infine, cliccare sul bottone 'Save' in basso a sinistra.
 .. image:: img_superset/conf_tableadd_3.jpeg
 
 Nel caso in esempio, è stato selezionato il dataset dei luoghi della cultura di Matera.
-
-
-================================
-Esplorare un dataset con SQL Lab
-================================
-
-Prima di costruire un grafico, si consiglia di analizzare il contenuto del dataset scelto.
-Superset offre nativamente una console per eseguire query SQL, a cui si può accedere cliccando su 'SQL Lab' e poi su 'SQL Editor'.
-
-.. image:: img_superset/conf_sqllab_1.jpeg
 
 
 =================================
