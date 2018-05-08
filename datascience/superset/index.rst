@@ -27,12 +27,14 @@ Prima di iniziare a costruire degi slicer è buona regola controllare che i camp
 
 Ogni dataset è definito da un elenco di:
 
-* campi: dati dalle misure quantitative (es: numero di abitanti, reddito, percentuale di disoccupazione) e dalle dimensioni di analisi (es.nome comune, fascia di reddito, tipologia di azienda). Le dimensioni consentono di determinare il metodo di raggruppamento dei dati provenienti dalla misura (es. mostrami la media della misura "reddito" per fascia di reddito e per comune) 
+* colonne: dati dalle misure quantitative (es: numero di abitanti, reddito, percentuale di disoccupazione) e dalle dimensioni di analisi (es.nome comune, fascia di reddito, tipologia di azienda). Le dimensioni consentono di determinare il metodo di raggruppamento dei dati provenienti dalla misura (es. mostrami la media della misura "reddito" per fascia di reddito e per comune) 
 * metriche: Superset mette a disposizione per ogni campo diverse metriche che è possibile avere a disposizione inserendo la spunta sulla metrica di interesse. Stà all'utente valutare quali inserire e su quali campi abilitarle.
 
-
+Colonne:
 .. image:: img_superset/checkMetriche.png
 
+
+Metriche:
 .. image:: img_superset/metriche.png
 
 ========================================
@@ -59,9 +61,9 @@ Per accedere ai campi della tabella cliccare sull'icona "Edit"
 
 Dopo aver selezionato la tabella verrà presentato un elenco in cui ogni riga è un campo del dataset.
 Per ogni campo, se necessario è possibile ridefinire le proprietà elencate e creare nuovi campi derivati.
-Per apportare le modifiche cliccare sull’icona matita a sinistra del campo
+Per apportare le modifiche cliccare sull’icona "edit" a sinistra del campo
 
-.. image:: img_superset/editTable.png
+
 
 ========================================
 Controllo del dataset
