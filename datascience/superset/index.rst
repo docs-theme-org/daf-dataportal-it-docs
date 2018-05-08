@@ -19,13 +19,6 @@ Verrai automaticamente indirizzato su Superset nella modalità di creazione di u
 
 .. image:: img_superset/SchedaDataset.png
 
-========================================
-Controllo del dataset
-========================================
-Se si è in possesso di un'utenza editor e si è appena caricato il dataset sul dataportal, può essere utile controllare rapidamente se il numero di record caricati corrisponde a quelli attesi. 
-E' possibile effettuare questo primo test selezionando nel campo Metrics “COUNTS (*)” e cliccando su “Run query”.
-
-.. image:: img_superset/checkDatasetRecords.png
 
 ========================================
 Proprietà del dataset
@@ -34,13 +27,13 @@ Prima di iniziare a costruire degi slicer è buona regola controllare che i camp
 
 Ogni dataset è definito da un elenco di:
 
-* 'campi': dati dalle misure quantitative (es: numero di abitanti, reddito, percentuale di disoccupazione) e dalle dimensioni di analisi (es.nome comune, fascia di reddito, tipologia di azienda). Le dimensioni consentono di determinare il metodo di raggruppamento dei dati provenienti dalla misura (es. mostrami la media della misura "reddito" per fascia di reddito e per comune) 
-* 'metriche': Superset mette a disposizione per ogni campo diverse metriche che è possibile avere a disposizione inserendo la spunta sulla metrica di interesse. Stà all'utente valutare quali inserire e su quali campi abilitarle.
-es: count, sum, avg
+* campi: dati dalle misure quantitative (es: numero di abitanti, reddito, percentuale di disoccupazione) e dalle dimensioni di analisi (es.nome comune, fascia di reddito, tipologia di azienda). Le dimensioni consentono di determinare il metodo di raggruppamento dei dati provenienti dalla misura (es. mostrami la media della misura "reddito" per fascia di reddito e per comune) 
+* metriche: Superset mette a disposizione per ogni campo diverse metriche che è possibile avere a disposizione inserendo la spunta sulla metrica di interesse. Stà all'utente valutare quali inserire e su quali campi abilitarle.
 
 
 .. image:: img_superset/checkMetriche.png
 
+.. image:: img_superset/metriche.png
 
 ========================================
 Configurazione di un dataset
@@ -70,6 +63,13 @@ Per apportare le modifiche cliccare sull’icona matita a sinistra del campo
 
 .. image:: img_superset/editTable.png
 
+========================================
+Controllo del dataset
+========================================
+Se si è in possesso di un'utenza editor e si è appena caricato il dataset sul dataportal, può essere utile controllare rapidamente se il numero di record caricati corrisponde a quelli attesi. 
+E' possibile effettuare questo primo test selezionando nel campo Metrics “COUNTS (*)” e cliccando su “Run query”.
+
+.. image:: img_superset/checkDatasetRecords.png
 
 =================================
 Definizione e modifica di un campo
@@ -79,6 +79,15 @@ Cliccando sul nome di un campo verrà presentata una scheda con le caratteristic
 E’ possibile indicare un “Verbose name” che sarà l’etichetta mostrata quando il campo verrà usato nei widget, una “description” che sarà mostrata come tooltip.
 
 .. image:: img_superset/modificaCampo.png
+
+=================================
+Definizione di un Campo con formato data
+=================================
+Per definire un campo che indica una data e che nella tabella originaria è impostato a STRING o con altre tipologie di dati è sufficiente cliccare sul campo di interesse e modificare il campo TYPE a DATETIME esplicitando il Datetime format utilizzato nel dataset.
+
+.. image:: img_superset/datetime.png
+
+
 
 =================================
 Creazione di un grafico ('Slice')
