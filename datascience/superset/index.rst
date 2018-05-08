@@ -47,32 +47,38 @@ Configurazione di un dataset
 ========================================
 Un utente può accedere alla homepage di Superset direttamente dal Dataportal grazie al menù laterale sinistro della sezione privata del Dataportal (sezione: Toolkit - Strumenti - Superset) oppure atterrare comodamente alla schermata di crezione di uno slicer attraverso la scheda del dataset mostrata in precedenza.
 
-
-Una volta entrati in Superset dal menù Strumenti, si accede alla lista delle dashboard create nell'ambito dell'organizzazione a cui afferisce l'utente che ha effettuato l'accesso.
-Superset adotta infatti un approccio self-service: questo significa che ciascun utente, da un lato, potrà provvedere alla creazione delle nuove tabelle utili alle analisi, dei grafici e delle dashboard; dall'altro potrà riutilizzare le tabelle, i grafici e le dashboard creati dalla community.
+Una volta entrati in Superset dal menù Strumenti, si accede alla lista delle dashboard create nell'ambito dell'organizzazione a cui afferisce l'utente che ha effettuato l'accesso e della community.
+Superset adotta infatti un approccio self-service: questo significa che ciascun utente, da un lato, potrà provvedere alla creazione dei grafici e delle dashboard; dall'altro potrà riutilizzare le tabelle, i grafici e le dashboard creati dalla community.
 Chiaramente quest'ultima possibilità impone anche una certa disciplina nell'uso dello strumento, per evitare di interferire con le analisi fatte dagli altri utenti dell'organizzazione.
 
 Il primo step nell'uso di Superset consiste nell'individuazione dei dataset oggetto di analisi.
 Nella homepage selezionare la voce 'Tables' dal menu a tendina 'Sources'.
 
-.. image:: img_superset/conf_tableadd_1.jpeg
+.. image:: img_superset/searchTables.png
 
-Comparirà la lista delle tabelle precedentemente importate dall'utente, o da un altro membro della sua organizzazione, dai database già configurati in Superset [1]_.
 
 Scorrendo la lista è possibile trovare e selezionare la tabella che contiene il dataset di interesse, anche aiutandosi, all'occorrenza, con i filtri attivabili cliccando sul bottone in alto a destra 'Add Filter'.
 
-.. image:: img_superset/conf_tableadd_2.jpeg
+Per accedere ai campi della tabella cliccare sull'icona "Edit"
 
-Alternativamente, è possibile importare una nuova tabella.
-Una volta individuato il dataset di interesse utilizzando il Dataportal, sarà necessario copiare il riferimento al dataset presente nelle schede di dettaglio del dataset stesso.
-Tornado nella sezione Tables su Superset, cliccare sul bottone '+' in alto a destra.
-Si aprirà la pagina 'Add Table' in cui sarà possibile selezionare il database di interesse ('open data' nel caso di esempio) e indicare il nome della tabella che sarà il riferimento precedentemente copiato dalla scheda informativa del dataset.
-Infine, cliccare sul bottone 'Save' in basso a sinistra.
+.. image:: img_superset/editTable.png
 
-.. image:: img_superset/conf_tableadd_3.jpeg
 
-Nel caso in esempio, è stato selezionato il dataset dei luoghi della cultura di Matera.
+Dopo aver selezionato la tabella verrà presentato un elenco in cui ogni riga è un campo del dataset.
+Per ogni campo, se necessario è possibile ridefinire le proprietà elencate e creare nuovi campi derivati.
+Per apportare le modifiche cliccare sull’icona matita a sinistra del campo
 
+.. image:: img_superset/editTable.png
+
+
+=================================
+Definizione e modifica di un campo
+=================================
+
+Cliccando sul nome di un campo verrà presentata una scheda con le caratteristiche del campo.
+E’ possibile indicare un “Verbose name” che sarà l’etichetta mostrata quando il campo verrà usato nei widget, una “description” che sarà mostrata come tooltip.
+
+.. image:: img_superset/modificaCampo.png
 
 =================================
 Creazione di un grafico ('Slice')
