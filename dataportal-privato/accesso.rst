@@ -8,6 +8,9 @@ Registrazione
 
 Accedere alla pagina https://dataportal-private.daf.teamdigitale.it direttamente o tramite il pulsante *Accedi* presente sul portale pubblico. Cliccare su *Registrati!* e fornire le informazioni richieste, quindi cliccare su *Crea Account*. In mancanza di segnalazioni (nel qual caso è necessario prima risolverle) il sistema provvederà all'invio di un link di attivazione all'indirizzo email indicato.
 
+Nota
+    Il nome utente può essere composto esclusivamente da caratteri alfanumerici e dai seguenti caratteri speciali: ``-`` (dash) e ``_`` (underscore). La password deve essere formata da almeno 8 caratteri e contenere almeno una lettera maiuscola e almeno un numero.
+
 .. figure:: _img/login.png
    :width: 511 px
 
