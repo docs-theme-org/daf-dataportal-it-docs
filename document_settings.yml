@@ -1,0 +1,10 @@
+--- 
+document:
+  name: DAF Dataportal - manuale per l’utente
+  description: |
+    Questo manuale per l’utente illustra le principali operazioni che è
+    possibile svolgere all'interno dell’area pubblica del Dataportal,
+    accessibile a tutti gli utenti del Web, e dell'area privata, a uso
+    esclusivo degli utenti registrati.
+  tags:
+    - manuale
