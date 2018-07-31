@@ -31,7 +31,7 @@ Per inserire un nuovo dataset all'interno della piattaforma DAF è necessario pr
 
 Nel caso di un flusso batch, inoltre, i file dovranno essere caricati su un canale SFTP.
 
-**Nota:** la prima volta che si definisce un flusso batch è necessario effettuare un accesso preliminare all'host daf.teamdigitale.it (porta 22) utilizzando il proprio nome utente e la propria password. Il nome utente è disponibile accedendo dal portale ai dettagli del proprio profilo.
+**Nota:** la prima volta che si definisce un flusso batch è necessario effettuare un accesso preliminare all'host daf.teamdigitale.it (porta 22) utilizzando la propria chiave ssh privata e dopo aver comunicato al Team la propria chiave pubblica. Il nome utente è disponibile accedendo dal portale ai dettagli del proprio profilo.
 
 Creazione e metadatazione del dataset 
 =====================================
@@ -51,11 +51,12 @@ E' necessario che il file campione rispetti alcune regole:
 * Il numero di record deve esser limitato (circa 50 righe)
 * I nomi dei campi non devono avere spazi al loro interno
 * I nomi dei campi devono essere tutti diversi
-* I nomi dei campi non devono contenere caratteri speciali (e.g. '@', '-', '(', ')' )
+* I nomi dei campi non devono contenere caratteri speciali (e.g. '@', '-', '(', ')' ) né delimitatori di stringhe
 * Dimensione del file sample massima: 1 MB
 * Deve essere rappresentativo del dataset al fine di migliorare il risultato del processo di inferenza: per quanto possibile deve contenere record coerenti con il tipo di dato che ci si aspetta sulla tabella finale
 * I file CSV devono contenere l'header sia nel sample che in tutti i file che vengono caricati successivamente
-* Encoding UTF-8
+* I file JSON devono avere i dati su una sola riga
+* Encoding UTF-8 (senza BOM)
 
 Dopo aver caricato il file verrà visualizzata una schermata con l'elenco dei campi inferiti e per ognuno un campione dei valori contenuti.
 
@@ -81,7 +82,7 @@ Indicare:
 * licenza
 * organizzazione di appartenenza (nel caso di dataset pubblico selezionare default_org)
 
-Passo 3 - Modalitá di invio
+Passo 3 - Modalità di invio
 ***************************
 
 Definire:
@@ -101,9 +102,9 @@ Al termine si viene indirizzati alla pagina di dettaglio del dataset. Si ricordi
 Caricamento dei dataset via SFTP
 ================================
 
-Nel caso di caricamento di dataset in modalità batch mediante canale SFTP effettuare l'accesso all'host daf.teamdigitale.it (porta 22) utilizzando il nome utente e la propria password (il nome utente è disponibile accedendo dal portale ai dettagli del proprio profilo).
+Nel caso di caricamento di dataset in modalità batch mediante canale SFTP effettuare l'accesso all'host daf.teamdigitale.it (porta 22) utilizzando la propria chiave ssh privata. Se non si dispone di un coppia di chiavi ssh, è possibile utilizzare il nome utente e la propria password (il nome utente è disponibile accedendo dal portale ai dettagli del proprio profilo); questa possibilità sarà deprecata a breve.
 
-Caricare il/i file relativi al dataset definito in precedenza al path che sarà stato creato dal sistema. La struttura segue la convenzione ``/home/utente/dominio/sottodominio/dataset/``.
+Caricare il/i file relativi al dataset definito in precedenza al path che sarà stato creato dal sistema, utilizzando un percorso relativo. La struttura segue la convenzione ``dominio/sottodominio/dataset/``. Nel caricamento non impostare l'opzione (``-p``) di mantenimento della data di aggiornamento.
 
 Tutti i file che verranno man mano caricati in tale cartella incrementeranno il contenuto del dataset. Un processo in ascolto si occuperà di acquisire i file al massimo entro qualche minuto, in base alle dimensioni del file.
 
