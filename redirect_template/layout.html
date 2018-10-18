@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ docstitle }}</title>
+    </head>
+    <body>
+        If you are not redirected automatically, follow <a id="redirect">this link</a>.
+    </body>
+    <script>
+        var document_url = window.location.href.match(/\/\/[^\/]*\/([^\/]*)\/([^\/]*)\/(.*)/);
+        var language = document_url[1];
+        var version = document_url[2].replace('latest', 'bozza').replace('stable', 'stabile');
+        var document_page = document_url[3];
+        var redirect_url = [
+          'https://{{ domain }}',
+          '{{ publisher }}',
+          '{{ publisher_project }}',
+          '{{ document_repository }}',
+          language,
+          version,
+          document_page
+        ].join('/');
+        window.location.href = redirect_url;
+        document.getElementById('redirect').href = redirect_url;
+    </script>
+</html>
